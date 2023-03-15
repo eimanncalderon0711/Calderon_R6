@@ -2,25 +2,30 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 nav{
     background-color: #0F222D;
     height: 100px;
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
 
 }
 
+
+
 .ej-logo{
+   
     height: 80px;
     width: 100px; 
 }
 
+
 nav ul {
     position: absolute;
     top: 0;
-    right: 60px;
+    right: 100px;
 }
 
 nav ul li {
@@ -44,7 +49,6 @@ nav ul li a:hover{
 }
 
 
-
 header{
     height: 250px;
     background-image: radial-gradient(circle, #1a4862, #00697e, #008b85, #29aa74, #8bc457);}
@@ -58,45 +62,54 @@ header h1{
 
 
 main{
-    height: 800px;
+    width: 100%;
+    height: 850px;
     background-color: #0F222D;
     position: relative;
-
 }
 
-
-
-.products img{
-    width: 15%;
-    margin: 50px;
-
-}
 
 .products{
+    display: flex;
     text-align: center;
-    margin: 50px;
 }
 
-.prod-1 button{
-    cursor: pointer;
-    position: relative;
-    padding: 8px;
-    top: 30px;
-    left: 30px;
+
+.prod-container img{
+    margin-top: 50px;
+    width: 220px;
+
 }
 
-.prod-1 button:hover{
+.prod-container{
+    
+    margin: 0 120px;
+    color: white;
+
+}
+
+.prod-container button{
+    padding: 15px 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 0;
+}
+
+.prod-container p{
+    margin-top: 15px;
+}
+
+.prod-container button:hover{
     background-color: black;
-    color:white;
-    transition: .3s;
+    color: white;
+    cursor: pointer;
 }
 
+.prod-container button:active{
+    color: red;
+    
 
-.Eros-prod{
-    height: 20px;
-    width: 20px;
 }
-
 
 
 .about-company{
@@ -112,12 +125,40 @@ main{
     font-size: 15px;
 }
 
-
-
-
-
-
 footer{
-    height: 50px;
-    background-color: #8a7e7e;
+    margin-top: 1px;
+    height: 80px;
+    background-color: #143d57;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.products{
+    display: block;
+}
+
+main{
+    height: 2400px;
+    width: 100%;
+}
+
+.about-company{
+    font-size: 10;
+    text-align: center;
+}
+
+nav ul li{
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+nav{
+    height: 180px;
+
+}
+
+
 }
