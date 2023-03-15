@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: #0F222D;
+    height: 100px;
+    position: relative;
+   overflow: hidden;
+
+}
+
+.ej-logo{
+    height: 80px;
+    width: 100px; 
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    line-height: 90px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: rgb(172, 29, 29);
+    transition: .5s;
+    
+
+}
+
+
+
+header{
+    height: 250px;
+    background-image: radial-gradient(circle, #1a4862, #00697e, #008b85, #29aa74, #8bc457);}
+
+header h1{
+    text-align: center;
+    padding: 40px;
+    color: white;
+    line-height: 150px;
+}
+
+
+main{
+    height: 800px;
+    background-color: #0F222D;
+    position: relative;
+
+}
+
+
+
+.products img{
+    width: 15%;
+    margin: 50px;
+
+}
+
+.products{
+    text-align: center;
+    margin: 50px;
+}
+
+.prod-1 button{
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    top: 30px;
+    left: 30px;
+}
+
+.prod-1 button:hover{
+    background-color: black;
+    color:white;
+    transition: .3s;
+}
+
+
+.Eros-prod{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.about-company{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-company h4{
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+
+
+
+footer{
+    height: 50px;
+    background-color: #8a7e7e;
+}
